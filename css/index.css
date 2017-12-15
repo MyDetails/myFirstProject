@@ -1,0 +1,262 @@
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ul,li{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+ul,li{
+    list-style:none;
+}
+h1{
+    font-size:24px;
+}
+h2{
+    font-size:20px;
+}
+h3{
+    font-size:18px;
+}
+h4{
+    font-size:16px;
+}
+h5{
+    font-size: 14px;
+}
+h6{
+    font-size:12spx;
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+canvas {
+	background: white;
+	display: block;
+}
+.main{
+    max-width:1200px;
+    margin:0 auto;
+}
+/* start nav*/
+.nav-bg{
+    width: 100%;
+    background: #000;
+}
+nav.mynav{
+    background:#000;
+    border:none;
+    border-radius:0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:#fff;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>li>a:hover{
+    color:#29fca5;
+}
+.navbar-inverse .navbar-brand:hover {
+    color:#29fca5;
+}
+/* end nav */
+
+/* start who i am */
+.section-bg{
+    width:100%;
+    margin-bottom:20px;
+}
+.my-describe{
+    height:400px;
+    background-color:#fff;
+}
+.my-describe p{
+    font-size:20px;
+    color:#666;
+    line-height:1.8em;
+}
+
+.my-photo{
+    height:400px;
+    background-color:#2b2e35;
+}
+.my-photo-img{
+    width:150px;
+    height:150px;
+    background-color: black;
+    border:16px solid #5b616f;
+    border-radius:50%;
+    margin:0 auto;
+    margin-top:80px;
+    overflow: hidden;
+    box-shadow: 0.7em 1.2em 0 rgba(31, 33, 38, .8);
+    transition:all .35s ease-out;
+}
+.my-photo-img:hover{
+    box-shadow:-0.7em 0.7em 0 rgba(238, 238, 238, .8), 0.7em 1.2em 0 rgba(31, 33, 38, 0);
+}
+.my-name{
+    width:100%;
+    font-size:30px;
+    color:#fff;
+    text-align: center;
+    margin-top:30px;  
+}
+/* end who i am */
+
+/* start what i do */
+.my-work{
+    max-width:850px;
+    margin:0 auto;
+}
+.my-work .margin-t{
+    margin-top:30px;
+}
+.section-what-i-do .main h1{
+    width:100%;
+    text-align:center;
+    font-size:50px;
+}
+.work-img{
+    width:100%;
+    padding-top:75%;
+    position:relative;
+    box-shadow:0px 2px 10px rgba(0,0,0,0.2);
+    border-radius:4px;
+}
+.work-img-inner{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:hidden;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+.cover{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:5;
+    background-color:#3085a3;
+    opacity:0;
+    transition:opacity .5s;
+}
+.work-img img{
+    width: -webkit-calc(100% + 50px);
+    width:calc(100% + 50px);
+    transition:opacity 0.35s, transform 0.35s;
+}
+.work-img img:hover{
+    transform:translateX(-50px);
+}
+.caption{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:25%;
+    padding:0 8%;
+    color:#fff;
+    z-index:10;
+    transition:transform .5s;
+}
+.caption h2{
+    font-size:34px;
+}
+.caption h2 span{
+    margin:0 0.5em;
+}
+.caption p{
+    opacity:0;
+    font-size:20px;
+    color:rgba(255,255,255,.8);
+    transition:opacity 1s;
+}
+.work-img:hover .caption{
+    transform:translateY(-20%);
+}
+.work-img:hover .caption p{
+    opacity: 1;
+}
+.work-img:hover .cover{
+    opacity:0;
+}
+.work-img:hover .cover{
+    opacity: .5;
+}
+/* end what i do */
+
+/* start footer */
+.footer{
+    width:100%;
+    height:88px;
+    background-color:#000;
+    color:#29fca5;
+    padding-top:29px;
+}
+.footer-title p{
+    width:100%;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+}
+.footer-title p span,
+.footer-title p i{
+    margin:0 10px;
+}
+.footer-title p i{
+    color:#fff;
+    background-color:#fff;
+}
+.footer-title p i:hover{
+    background-color:#000;
+    color:#29fca5;
+}
+@keyframes myrotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.glyphicon-cog{
+    animation: myrotate 2s linear infinite;
+}
+/* end footer */
+.upfloor{
+    display: none;
+    position: fixed;
+    bottom:100px;
+    width:35px;
+    height:50px;
+    font-size:40px;
+    right:10px;
+    transform: translateX(0);
+}
+@media (min-width:1200px){
+    .upfloor{
+        right:50%;
+        transform: translateX(600px);
+    }  
+}
+
+
+

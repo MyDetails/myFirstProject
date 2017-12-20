@@ -19,6 +19,9 @@ $(document).ready(function(){
             });
         }
     });
+    $('.mobile-tab-name').on('touchstart', function() {
+        $('.mobile-tab-name').css({'background-color':'#000', 'color':'#29fca5'})
+    })
     $('.upfloor').click(function(){
         $('body,html').animate({scrollTop:0},1000);
     });

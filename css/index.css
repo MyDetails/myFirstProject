@@ -39,7 +39,10 @@ a:hover{
     }  
 }
 canvas {
-	background: #000;
+    background: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .main{
     max-width:1200px;

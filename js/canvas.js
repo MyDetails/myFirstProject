@@ -116,8 +116,8 @@
 	var c = document.getElementById('c');
 	var ctx = c.getContext('2d');
 
-	var WIDTH = c.width = window.innerWidth;
-	var HEIGHT = c.height = window.innerHeight;
+	var WIDTH = c.width = 1280;
+	var HEIGHT = c.height = 587;
 	var imgData = null;
 	var idx = null;
 	var skip = 4;

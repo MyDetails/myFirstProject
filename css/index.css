@@ -73,6 +73,7 @@ nav.mynav{
 .my-describe{
     height:400px;
     background-color:#fff;
+    padding-top: 20px;
 }
 .my-describe p{
     font-size:20px;
